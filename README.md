@@ -9,8 +9,9 @@
 
 ## Introduction
 
-In this lesson, we'll learn how to negate and combine expressions with
-JavaScript's three logical operators: NOT (`!`), AND (`&&`), and OR (`||`).
+Logical operators in Javascript are the powerful backbone on which most website
+logic is based. Using JavaScript's three logical operators, NOT (`!`), AND (`&&`),
+and OR (`||`), we'll learn how to negate and combine expressions.
 
 ## Describe How to Use `!` to Negate an Expression
 
@@ -220,9 +221,12 @@ if (
 
 ## Conclusion
 
-Logical operators in Javascript are the powerful backbone on which most website
-logic is based. Once you understand how to control the different options
-available to you, the sky's the limit!
+Logical operators are used to determine the logic between variables or
+values. Although they are called “logical”, they can be applied to values
+of any type--not just boolean. The result can also be of any type. If a
+value can be converted to true, the value is so-called truthy, and if a
+value can be converted to false, the value is so-called falsy. With these
+different options available to us, the sky's the limit!
 
 ## Resources
 
