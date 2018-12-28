@@ -2,16 +2,17 @@
 
 ## Learning Goals
 
-* Use `!` to negate an expression
-* Convert an expression to a boolean using `!!`
-* Link conditions with the `&&` and `||` operators
+* Describe how to use `!` to negate an expression
+* Describe how to convert an expression to a boolean using `!!`
+* Define the `&&` and `||` operators
+* Describe how to link conditions using the `&&` and `||` operators
 
 ## Introduction
 
 In this lesson, we'll learn how to negate and combine expressions with
 JavaScript's three logical operators: NOT (`!`), AND (`&&`), and OR (`||`).
 
-## Use `!` to Negate an Expression
+## Describe How to Use `!` to Negate an Expression
 
 ### `!` NOT
 
@@ -32,7 +33,7 @@ const falsyValue = 0;
 // => true
 ```
 
-## Convert an Expression to a Boolean Using `!!`
+## Describe How to Convert an Expression to a Boolean Using `!!`
 
 ### `!!`
 
@@ -68,9 +69,9 @@ NOT operator. See what happens when you stack a ton of them: `!!!!!!!!!truthyVal
 
 On to the next!
 
-## Combine Conditions With the `&&` and `||` Operators
+## Define the `&&` and `||` Operators
 
-### && `AND`
+### `&&` AND
 
 The logical AND (`&&`) operator takes two expressions:
 
@@ -126,7 +127,7 @@ There are three different ways the `&&` operator can be evaluated:
     so make sure you're testing all of these new operators out in your browser's
     JavaScript console to get a feel for how they work.
 
-## OR
+### `||` OR
 
 The logical OR (`||`) operator also takes two expressions:
 
@@ -179,7 +180,7 @@ There are three different ways the `||` operator can be evaluated:
     As with the `&&` operator, make sure you're testing out all of these outcomes in your
     browser's JS console!
 
-## Link Conditions with the `&&` and `||` Operators
+## Describe How to Link Conditions Using the `&&` and `||` Operators
 
 The `&&` and `||` operators are often used to link multiple conditions in a
 conditional statement:
