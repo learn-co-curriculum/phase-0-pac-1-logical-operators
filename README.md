@@ -1,4 +1,4 @@
-# JavaScript Fundamentals: Logical Operators
+# Logical Operators
 
 ## Learning Goals
 
