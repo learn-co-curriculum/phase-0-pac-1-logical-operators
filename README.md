@@ -36,13 +36,11 @@ create your own account to make changes.)
 
 ## Describe How to Convert an Expression to a Boolean Using `!!`
 
-### `!!`
-
 In an earlier lesson, we passed values into the `Boolean()` _constructor
 function_ to check their truthiness. We'll learn all about constructor functions
 later in the course; for now, just think of `Boolean()` as a function that takes
 in some input, _constructs_ a new Boolean from that input, and outputs the
-constructed Boolean.
+newly constructed Boolean.
 
 As a shorter way to convert any value into a Boolean, we can use two NOT
 operators:
@@ -63,8 +61,8 @@ operator. See what happens when you stack a ton of them: `!!!!!!!!!truthyValue`.
 
 **Note:** You can edit line 3 in `index.js` _or_ add lines of code below the
 current code. If you add lines, when you click the Run button, the value
-returned in the bottom window will be the return value of the _last_ expression
-evaluated.
+returned in the bottom window will be the return value of the _last expression
+evaluated_.
 
 On to the next!
 
@@ -202,8 +200,8 @@ the front. The `//` is used in JavaScript to 'comment out' lines of code. Any
 line in your code that has `//` at the front will _not be interpreted_ by the
 JavaScript engine. This enables us to do two things: 1) include text (i.e.,
 messages meant for humans) in our code files without JavaScript throwing an
-error, and 2) _temporarily_ keep lines of code from being interpreted; this use
-can be especially handy when debugging code.
+error, and 2) _temporarily_ keep lines of code from being interpreted; this 
+second use can be especially handy when debugging code.
 
 Try removing the `//` at the beginning of line 1 and clicking the Run button.
 Not surprisingly, JavaScript doesn't know what to do with that line of 'code'.
@@ -225,7 +223,7 @@ If you're having difficulty with the examples, try following this procedure:
 1. Evaluate each side of the operator individually: what is the _return value_
    of each individual expression, and what is the _truthiness_ of each of those
    values?
-2. Find the appropriate row in the corresponding table above and refer to the
+2. Find the corresponding row in the appropriate table above and refer to the
    'Return value' column to determine the return value of the full expression.
 
 Finally, once you're done with the provided expressions, experiment with some
