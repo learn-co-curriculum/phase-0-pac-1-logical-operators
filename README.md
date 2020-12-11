@@ -26,17 +26,12 @@ expression, returning the opposite of the expression's truthiness. If `x`
 resolves to a truthy value, `!x` returns `false`. If `x` is falsey, `!x` returns
 `true`:
 
-```js
-const truthyValue = 'This value is truthy.';
+<iframe height="400px" width="100%" src="https://repl.it/@LizBurton/UniqueAnotherAutomaticvectorization?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
-!truthyValue;
-// => false
-
-const falseyValue = 0;
-
-!falseyValue;
-// => true
-```
+If you click the Run button you'll see the bang operator in action, returning
+the reverse of `truthyValue`'s truthiness. Then modify the code on line 4 to
+verify that it works for the falsey value as well. (Recall that you will need to
+create your own account to make changes.)
 
 ## Describe How to Convert an Expression to a Boolean Using `!!`
 
@@ -45,21 +40,13 @@ const falseyValue = 0;
 In an earlier lesson, we passed values into the `Boolean()` _constructor
 function_ to check their truthiness. We'll learn all about constructor functions
 later in the course; for now, just think of `Boolean()` as a function that takes
-in some input, creates a new Boolean from that input, and outputs the created
-Boolean.
+in some input, _constructs_ a new Boolean from that input, and outputs the
+constructed Boolean.
 
 As a shorter way to convert any value into a Boolean, we can use two NOT
 operators:
 
-```js
-const truthyValue = 'This value is truthy.';
-
-!truthyValue;
-// => false
-
-!!truthyValue;
-// => true
-```
+<iframe height="400px" width="100%" src="https://repl.it/@LizBurton/WanGrimyFunction?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 The JavaScript engine reads from left to right: it sees the first `!` and looks
 to the right to check what we're asking it to invert (`!truthyValue`). It then
@@ -70,15 +57,19 @@ the inner `!` operator on it. `!truthyValue` returns `false`, so instead of
 `!!truthyValue` JavaScript is now evaluating `!false`. Executing the outer `!`
 operator on `false` returns `true`.
 
-Try inverting various values in [repl.it](https://repl.it/languages/javascript)
-to get a feel for the NOT operator. See what happens when you stack a ton of
-them: `!!!!!!!!!truthyValue`.
+Try inverting various values in the REPL above to get a feel for the NOT
+operator. See what happens when you stack a ton of them: `!!!!!!!!!truthyValue`.
+
+**Note:** You can edit line 3 in `index.js` _or_ add lines of code below the
+current code. If you add lines, when you click the Run button, the value
+returned in the bottom window will be the return value of the _last_ expression
+evaluated.
 
 On to the next!
 
 ## Define the `&&` and `||` Operators
 
-### `&&` AND
+### `&&` (AND)
 
 The logical AND (`&&`) operator takes two expressions:
 
@@ -139,7 +130,7 @@ that's a bit hard to understand unless you've played around with it in code so
 make sure you're testing all of these new operators out in
 [repl.it](https://repl.it/languages/javascript) to get a feel for how they work.
 
-### `||` OR
+### `||` (OR)
 
 The logical OR (`||`) operator also takes two expressions:
 
@@ -195,8 +186,48 @@ What this means is that the return value of the expression will be truthy if
 *one or both* of the values on either side of the `||` are truthy, and falsey
 otherwise.
 
-Again, make sure you test out all of these outcomes for yourself to get the hang
-of them!
+## Practicing What We've Learned
+
+The REPL below contains a number of expressions that use the logical operators
+we've learned about in this lesson:
+
+<iframe height="400px" width="100%" src="https://repl.it/@LizBurton/EmbellishedPresentOrigin?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+### A Note About Comments in Code
+
+Note that most of the lines in the REPL currently have the characters `//` at
+the front. The `//` is used in JavaScript to 'comment out' lines of code. Any
+line in your code that has `//` at the front will _not be interpreted_ by the
+JavaScript engine. This enables us to do two things: 1) include text (i.e.,
+messages meant for humans) in our code files without JavaScript throwing an
+error, and 2) _temporarily_ keep lines of code from being interpreted; this is
+especially handy when debugging code.
+
+Try removing the `//` at the beginning of line 1 and clicking the Run button.
+Not surprisingly, JavaScript doesn't know what to do with that line of 'code'.
+The `//` enables programmers to include messages to other programmers &mdash; or
+to their own future selves &mdash; for documentation or clarification purposes.
+Don't forget to re-comment out line 1 before you move on.
+
+### Instructions
+
+Okay, let's get some practice with logical operators. Take a look at line 4 in
+the REPL (the only un-commented out line). What do you think the expression will
+return? Think it through and come up with an answer, then click Run to check
+whether you're right. When you're done with the first expression, work your way
+down, un-commenting out each expression in turn. Be sure you think each example
+through and figure out your answer before clicking Run.
+
+If you're having difficulty with the examples, try following this procedure:
+
+1. Evaluate each side of the operator individually: what is the _return value_
+   of each individual expression, and what is the _truthiness_ of each of those
+   values?
+2. Find the appropriate row in the corresponding table above and refer to the
+   'Return value' column to determine the return value of the full expression.
+
+Finally, once you're done with the provided expressions, come up with some
+examples of your own to cement your understanding.
 
 ## Conclusion
 
