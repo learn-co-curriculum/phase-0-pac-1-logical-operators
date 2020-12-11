@@ -6,6 +6,7 @@
 * Describe how to convert an expression to a Boolean using `!!`
 * Define the `&&` and `||` operators
 * Describe how to link conditions using the `&&` and `||` operators
+* Practice What We Learned
 
 ## Introduction
 
@@ -126,9 +127,8 @@ What this means is that the return value of the expression will be truthy if the
 values on either side of the `&&` are *both* truthy, and falsey otherwise.
 
 If you're feeling a little confused, that's ok. This is one of those concepts
-that's a bit hard to understand unless you've played around with it in code so
-make sure you're testing all of these new operators out in
-[repl.it](https://repl.it/languages/javascript) to get a feel for how they work.
+that's a bit hard to understand unless you've played around with it in code. You
+will have an opportunity to practice at the end of the lesson.
 
 ### `||` (OR)
 
@@ -193,6 +193,8 @@ we've learned about in this lesson:
 
 <iframe height="400px" width="100%" src="https://repl.it/@LizBurton/EmbellishedPresentOrigin?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
+Before we get to that, however...
+
 ### A Note About Comments in Code
 
 Note that most of the lines in the REPL currently have the characters `//` at
@@ -200,8 +202,8 @@ the front. The `//` is used in JavaScript to 'comment out' lines of code. Any
 line in your code that has `//` at the front will _not be interpreted_ by the
 JavaScript engine. This enables us to do two things: 1) include text (i.e.,
 messages meant for humans) in our code files without JavaScript throwing an
-error, and 2) _temporarily_ keep lines of code from being interpreted; this is
-especially handy when debugging code.
+error, and 2) _temporarily_ keep lines of code from being interpreted; this use
+can be especially handy when debugging code.
 
 Try removing the `//` at the beginning of line 1 and clicking the Run button.
 Not surprisingly, JavaScript doesn't know what to do with that line of 'code'.
@@ -226,7 +228,7 @@ If you're having difficulty with the examples, try following this procedure:
 2. Find the appropriate row in the corresponding table above and refer to the
    'Return value' column to determine the return value of the full expression.
 
-Finally, once you're done with the provided expressions, come up with some
+Finally, once you're done with the provided expressions, experiment with some
 examples of your own to cement your understanding.
 
 ## Conclusion
