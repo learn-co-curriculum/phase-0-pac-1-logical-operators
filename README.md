@@ -247,8 +247,8 @@ second use can be especially handy when debugging code.
 
 Try removing the `//` at the beginning of line 1 and clicking the Run button.
 Not surprisingly, JavaScript doesn't know what to do with that line of 'code'.
-The `//` enables programmers to include messages to other programmers &mdash; or
-to their own future selves &mdash; for documentation or clarification purposes.
+The `//` enables programmers to include messages to other programmers — or
+to their own future selves — for documentation or clarification purposes.
 Don't forget to re-comment out line 1 before you move on.
 
 ### Instructions
