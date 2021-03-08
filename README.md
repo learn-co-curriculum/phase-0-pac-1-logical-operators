@@ -63,7 +63,7 @@ Try inverting various values in the REPL above to get a feel for the NOT
 operator. See what happens when you stack a ton of them: `!!!!!!!!!truthyValue`.
 
 > **Note:** You can edit line 3 in `index.js` _or_ add lines of code below the current code. If you add lines, when you click the Run button, the value
-returned in the console window will be the return value of the _last expression evaluated_.
+returned in the console tab will be the return value of the _last expression evaluated_.
 
 On to the next!
 
