@@ -251,6 +251,10 @@ The `//` enables programmers to include messages to other programmers — or
 to their own future selves — for documentation or clarification purposes.
 Don't forget to re-comment out line 1 before you move on.
 
+> **Reminder:** Recall that you will need to click "open in repl.it" in the 
+> upper right corner of the REPL window to open it in a new browser tab, then
+> sign in to your repl.it account before you can fork the code and modify it.
+
 ### Instructions
 
 Okay, let's get some practice with logical operators. Take a look at line 4 in
