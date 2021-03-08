@@ -31,8 +31,11 @@ resolves to a truthy value, `!x` returns `false`. If `x` is falsey, `!x` returns
 
 If you click the Run button you'll see the bang operator in action, returning
 the reverse of `truthyValue`'s truthiness. Then modify the code on line 4 to
-verify that it works for the falsey value as well. (Recall that you will need to
-create your own account to make changes.)
+verify that it works for the falsey value as well.
+
+> **Reminder:** Recall that you will need to click "open in repl.it" in the 
+> upper right corner of the REPL window to open it in a new browser tab, then
+> sign in to your repl.it account before you can fork the code and modify it.
 
 ## Describe How to Convert an Expression to a Boolean Using `!!`
 
@@ -250,10 +253,6 @@ Not surprisingly, JavaScript doesn't know what to do with that line of 'code'.
 The `//` enables programmers to include messages to other programmers — or
 to their own future selves — for documentation or clarification purposes.
 Don't forget to re-comment out line 1 before you move on.
-
-> **Reminder:** Recall that you will need to click "open in repl.it" in the 
-> upper right corner of the REPL window to open it in a new browser tab, then
-> sign in to your repl.it account before you can fork the code and modify it.
 
 ### Instructions
 
