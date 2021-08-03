@@ -110,33 +110,11 @@ true && false;
 
 There are three different ways the `&&` operator can be evaluated:
 
-<table border="1" cellpadding="4" cellspacing="0">
-  <tr>
-    <th>Left side</th>
-    <th>Right side</th>
-    <th>Return value</th>
-    <th>Truthiness of return value</th>
-  </tr>
-  
-  <tr>
-    <td>Falsey</td>
-    <td>Doesn't matter</td>
-    <td>Left side</td>
-    <td>Falsey</td>
-  </tr>
-  <tr>
-    <td>Truthy</td>
-    <td>Falsey</td>
-    <td>Right side</td>
-    <td>Falsey</td>
-  </tr>
-  <tr>
-    <td>Truthy</td>
-    <td>Truthy</td>
-    <td>Right side</td>
-    <td>Truthy</td>
-  </tr>
-</table>
+| Left side | Right side | Return value | Truthiness of return value |
+| --- | --- | --- | --- |
+| Falsey | Doesn't matter | Left side | Falsey |
+| Truthy | Falsey | Right side | Falsey |
+| Truthy | Truthy | Right side | Truthy |
 
 1. If the left-side expression is falsey, the right-side expression doesn't
    matter at all. The `&&` operator returns the left side's falsey value and
@@ -191,33 +169,12 @@ false || 'Whatever';
 
 There are three different ways the `||` operator can be evaluated:
 
-<table border="1" cellpadding="4" cellspacing="0">
-  <tr>
-    <th>Left side</th>
-    <th>Right side</th>
-    <th>Return value</th>
-    <th>Truthiness of return value</th>
-  </tr>
-  
-  <tr>
-    <td>Truthy</td>
-    <td>Doesn't matter</td>
-    <td>Left side</td>
-    <td>Truthy</td>
-  </tr>
-  <tr>
-    <td>Falsey</td>
-    <td>Truthy</td>
-    <td>Right side</td>
-    <td>Truthy</td>
-  </tr>
-  <tr>
-    <td>Falsey</td>
-    <td>Falsey</td>
-    <td>Right side</td>
-    <td>Falsey</td>
-  </tr>
-</table>
+| Left side | Right side | Return value | Truthiness of return value |
+| --- | --- | --- | --- |
+| Truthy | Doesn't matter | Left side | Truthy |
+| Falsey | Truthy | Right side | Truthy |
+| Falsey | Falsey | Right side | Falsey |
+
 
 1. If the left-side expression is truthy, the right-side expression doesn't
    matter at all. The `||` operator returns the left side's truthy value and
