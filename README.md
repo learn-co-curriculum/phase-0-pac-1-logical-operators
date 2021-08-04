@@ -2,11 +2,11 @@
 
 ## Learning Goals
 
-* Describe how to use `!` to negate an expression
-* Describe how to convert an expression to a Boolean using `!!`
-* Define the `&&` and `||` operators
-* Describe how to link conditions using the `&&` and `||` operators
-* Practice What We Learned
+- Describe how to use `!` to negate an expression
+- Describe how to convert an expression to a Boolean using `!!`
+- Define the `&&` and `||` operators
+- Describe how to link conditions using the `&&` and `||` operators
+- Practice What We Learned
 
 ## Introduction
 
@@ -33,7 +33,7 @@ If you click the Run button you'll see the bang operator in action, returning
 the reverse of `truthyValue`'s truthiness. Then modify the code on line 4 to
 verify that it works for the falsey value as well.
 
-> **Reminder:** Recall that you will need to click "open in repl.it" in the 
+> **Reminder:** Recall that you will need to click "open in repl.it" in the
 > upper right corner of the REPL window to open it in a new browser tab, then
 > sign in to your repl.it account before you can fork the code and modify it.
 
@@ -42,8 +42,8 @@ verify that it works for the falsey value as well.
 In an earlier lesson, we passed values into the `Boolean()` _constructor
 function_ to check their truthiness. We'll learn all about constructor functions
 later in the course; for now, just think of `Boolean()` as a function that takes
-in some input, _constructs_ a new Boolean from that input, and outputs the
-newly constructed Boolean.
+in some input, _constructs_ a new Boolean from that input, and outputs the newly
+constructed Boolean.
 
 As a shorter way to convert any value into a Boolean, we can use two NOT
 operators:
@@ -62,8 +62,10 @@ operator on `false` returns `true`.
 Try inverting various values in the REPL above to get a feel for the NOT
 operator. See what happens when you stack a ton of them: `!!!!!!!!!truthyValue`.
 
-> **Note:** You can edit line 3 in `index.js` _or_ add lines of code below the current code. If you add lines, when you click the Run button, the value
-returned in the console tab will be the return value of the _last expression evaluated_.
+> **Note:** You can edit line 3 in `index.js` _or_ add lines of code below the
+> current code. If you add lines, when you click the Run button, the value
+> returned in the console tab will be the return value of the _last expression
+> evaluated_.
 
 On to the next!
 
@@ -86,11 +88,11 @@ Again, if the first expression is falsey, `&&` returns that value and exits
 _without ever checking the second expression_:
 
 ```js
-false && 'Anything';
+false && "Anything";
 // => false
 
 // 4 * 0 returns 0, which is falsey
-4 * 0 && 'Anything';
+4 * 0 && "Anything";
 // => 0
 ```
 
@@ -101,20 +103,20 @@ expression evaluates to:
 true && false;
 // => false
 
-1 + 1 && 'Whatever';
+1 + 1 && "Whatever";
 // => "Whatever"
 
-'The truthiest of truthy strings' && 9 * 9;
+"The truthiest of truthy strings" && 9 * 9;
 // => 81
 ```
 
 There are three different ways the `&&` operator can be evaluated:
 
-| Left side | Right side | Return value | Truthiness of return value |
-| --- | --- | --- | --- |
-| Falsey | Doesn't matter | Left side | Falsey |
-| Truthy | Falsey | Right side | Falsey |
-| Truthy | Truthy | Right side | Truthy |
+| Left side | Right side     | Return value | Truthiness of return value |
+| --------- | -------------- | ------------ | -------------------------- |
+| Falsey    | Doesn't matter | Left side    | Falsey                     |
+| Truthy    | Falsey         | Right side   | Falsey                     |
+| Truthy    | Truthy         | Right side   | Truthy                     |
 
 1. If the left-side expression is falsey, the right-side expression doesn't
    matter at all. The `&&` operator returns the left side's falsey value and
@@ -123,7 +125,7 @@ There are three different ways the `&&` operator can be evaluated:
    side's value (whether it's truthy or falsey) and finishes.
 
 What this means is that the return value of the expression will be truthy if the
-values on either side of the `&&` are *both* truthy, and falsey otherwise.
+values on either side of the `&&` are _both_ truthy, and falsey otherwise.
 
 If you're feeling a little confused, that's ok. This is one of those concepts
 that's a bit hard to understand unless you've played around with it in code. You
@@ -146,10 +148,10 @@ If the first expression is truthy, that value is immediately returned and the
 second expression is never evaluated:
 
 ```js
-true || 'Whatever';
+true || "Whatever";
 // => true
 
-1 + 1 || 'Whatever';
+1 + 1 || "Whatever";
 // => 2
 ```
 
@@ -157,24 +159,23 @@ If the first expression is falsey, `||` returns whatever the second expression
 evaluates to:
 
 ```js
-false || 'Whatever';
+false || "Whatever";
 // => "Whatever"
 
 1 === 2 || 8 * 8;
 // => 64
 
-'' || 'Not ' + 'an ' + 'empty ' + 'string';
+"" || "Not " + "an " + "empty " + "string";
 // => "Not an empty string"
 ```
 
 There are three different ways the `||` operator can be evaluated:
 
-| Left side | Right side | Return value | Truthiness of return value |
-| --- | --- | --- | --- |
-| Truthy | Doesn't matter | Left side | Truthy |
-| Falsey | Truthy | Right side | Truthy |
-| Falsey | Falsey | Right side | Falsey |
-
+| Left side | Right side     | Return value | Truthiness of return value |
+| --------- | -------------- | ------------ | -------------------------- |
+| Truthy    | Doesn't matter | Left side    | Truthy                     |
+| Falsey    | Truthy         | Right side   | Truthy                     |
+| Falsey    | Falsey         | Right side   | Falsey                     |
 
 1. If the left-side expression is truthy, the right-side expression doesn't
    matter at all. The `||` operator returns the left side's truthy value and
@@ -183,7 +184,7 @@ There are three different ways the `||` operator can be evaluated:
    side's value (regardless of whether it's truthy or falsey) and completes.
 
 What this means is that the return value of the expression will be truthy if
-*one or both* of the values on either side of the `||` are truthy, and falsey
+_one or both_ of the values on either side of the `||` are truthy, and falsey
 otherwise.
 
 ## Practicing What We've Learned
@@ -202,14 +203,14 @@ the front. The `//` is used in JavaScript to 'comment out' lines of code. Any
 line in your code that has `//` at the front will _not be interpreted_ by the
 JavaScript engine. This enables us to do two things: 1) include text (i.e.,
 messages meant for humans) in our code files without JavaScript throwing an
-error, and 2) _temporarily_ keep lines of code from being interpreted; this 
+error, and 2) _temporarily_ keep lines of code from being interpreted; this
 second use can be especially handy when debugging code.
 
 Try removing the `//` at the beginning of line 1 and clicking the Run button.
 Not surprisingly, JavaScript doesn't know what to do with that line of 'code'.
-The `//` enables programmers to include messages to other programmers — or
-to their own future selves — for documentation or clarification purposes.
-Don't forget to re-comment out line 1 before you move on.
+The `//` enables programmers to include messages to other programmers — or to
+their own future selves — for documentation or clarification purposes. Don't
+forget to re-comment out line 1 before you move on.
 
 ### Instructions
 
@@ -242,6 +243,6 @@ programs.
 
 ## Resources
 
-* [MDN](https://developer.mozilla.org/en-US/)
-* [Logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
-* [Review of conditionals, comparisons, and logical operators](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
+- [MDN](https://developer.mozilla.org/en-US/)
+- [Logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
+- [Review of conditionals, comparisons, and logical operators](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
