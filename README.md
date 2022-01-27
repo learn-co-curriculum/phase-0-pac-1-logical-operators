@@ -25,11 +25,18 @@ In an earlier lesson, we learned about truthy and falsey values in JavaScript.
 The logical NOT operator (`!`), also called the _bang operator_, operates on an
 expression, returning the opposite of the expression's truthiness. If `x`
 resolves to a truthy value, `!x` returns `false`. If `x` is falsey, `!x` returns
-`true`:
+`true`. Plug the following code into your REPL console:
 
-<iframe height="400px" width="100%" src="https://repl.it/@LizBurton/UniqueAnotherAutomaticvectorization?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+```js
+   const truthyValue = 'This value is truthy.';
+   const falseyValue = 0;
 
-If you click the Run button you'll see the bang operator in action, returning
+   !truthyValue;
+```
+
+<iframe height="400px" width="100%" src="https://repl.it/@LizBurton/UniqueAnotherAutomaticvectorization?lite=true&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+If you run the code, you'll see the bang operator in action, returning
 the reverse of `truthyValue`'s truthiness. Then modify the code on line 4 to
 verify that it works for the falsey value as well.
 
@@ -46,9 +53,16 @@ in some input, _constructs_ a new Boolean from that input, and outputs the newly
 constructed Boolean.
 
 As a shorter way to convert any value into a Boolean, we can use two NOT
-operators:
+operators.
 
-<iframe height="400px" width="100%" src="https://repl.it/@LizBurton/WanGrimyFunction?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+```js
+   // Add the following to your console!
+   const truthyValue = 'This value is truthy.';
+
+   !!truthyValue;
+```
+
+<iframe height="400px" width="100%" src="https://repl.it/@LizBurton/WanGrimyFunction?lite=true&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 The JavaScript engine reads from left to right: it sees the first `!` and looks
 to the right to check what we're asking it to invert (`!truthyValue`). It then
@@ -192,7 +206,40 @@ otherwise.
 The REPL below contains a number of expressions that use the logical operators
 we've learned about in this lesson:
 
-<iframe height="400px" width="100%" src="https://repl.it/@LizBurton/EmbellishedPresentOrigin?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+```js
+   // What should each of the following expressions return? Once you have an
+   // answer, run the code to see if you're right
+
+   // Practice with AND
+   0 && false;
+
+   // 0 && true;
+
+   // true && NaN;
+
+   // true && !1;
+
+   // !0 && "This is a string";
+
+   // !0 && "";
+
+   // !0 && !!"";
+
+   // Practice with OR
+
+   // 0 || false;
+
+   // true || false;
+
+   // true || 1;
+
+   // !true || !false
+
+   // !1 || !0
+
+```
+
+<iframe height="400px" width="100%" src="https://repl.it/@LizBurton/EmbellishedPresentOrigin?lite=true&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 Before we get to that, however...
 
