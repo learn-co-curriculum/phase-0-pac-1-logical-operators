@@ -10,7 +10,7 @@
 
 ## Introduction
 
-In this lesson, we will continue to expand our toolset for creating Boolean
+In this lesson, we will continue to expand our tool set for creating Boolean
 expressions by learning about logical operators. Using JavaScript's three
 logical operators, NOT (`!`), AND (`&&`), and OR (`||`), we'll learn how to
 negate and combine expressions. These operators, in combination with the
@@ -25,17 +25,20 @@ In an earlier lesson, we learned about truthy and falsey values in JavaScript.
 The logical NOT operator (`!`), also called the _bang operator_, operates on an
 expression, returning the opposite of the expression's truthiness. If `x`
 resolves to a truthy value, `!x` returns `false`. If `x` is falsey, `!x` returns
-`true`:
+`true`. Let's add the following code into our REPL and see what the values are.
 
-<iframe height="400px" width="100%" src="https://repl.it/@LizBurton/UniqueAnotherAutomaticvectorization?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+```js
+const truthyValue = 'This value is truthy.';
+const falseyValue = 0;
+
+!truthyValue;
+```
+
+<iframe height="400px" width="100%" src="https://replit.com/@lizbur10/Sandbox?lite=1&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 If you click the Run button you'll see the bang operator in action, returning
-the reverse of `truthyValue`'s truthiness. Then modify the code on line 4 to
-verify that it works for the falsey value as well.
-
-> **Reminder:** Recall that you will need to click "open in repl.it" in the
-> upper right corner of the REPL window to open it in a new browser tab, then
-> sign in to your repl.it account before you can fork the code and modify it.
+the reverse of `truthyValue`'s truthiness. Then modify the code on the last line
+to verify that it works for `falseyValue` as well.
 
 ## Describe How to Convert an Expression to a Boolean Using `!!`
 
@@ -46,9 +49,7 @@ in some input, _constructs_ a new Boolean from that input, and outputs the newly
 constructed Boolean.
 
 As a shorter way to convert any value into a Boolean, we can use two NOT
-operators:
-
-<iframe height="400px" width="100%" src="https://repl.it/@LizBurton/WanGrimyFunction?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+operators. Let's change the code on the last line to `!!truthyValue`.
 
 The JavaScript engine reads from left to right: it sees the first `!` and looks
 to the right to check what we're asking it to invert (`!truthyValue`). It then
@@ -61,11 +62,6 @@ operator on `false` returns `true`.
 
 Try inverting various values in the REPL above to get a feel for the NOT
 operator. See what happens when you stack a ton of them: `!!!!!!!!!truthyValue`.
-
-> **Note:** You can edit line 3 in `index.js` _or_ add lines of code below the
-> current code. If you add lines, when you click the Run button, the value
-> returned in the console tab will be the return value of the _last expression
-> evaluated_.
 
 On to the next!
 
@@ -189,10 +185,39 @@ otherwise.
 
 ## Practicing What We've Learned
 
-The REPL below contains a number of expressions that use the logical operators
+The code below contains a number of expressions that use the logical operators
 we've learned about in this lesson:
 
-<iframe height="400px" width="100%" src="https://repl.it/@LizBurton/EmbellishedPresentOrigin?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+```js
+//What should each of the following expressions return? Once you have an answer, copy the expression in question into the console and hit enter to see if you're right!
+
+// Practice with AND
+0 && false;
+
+// 0 && true;
+
+// true && NaN;
+
+// true && !1;
+
+// !0 && "This is a string";
+
+// !0 && "";
+
+// !0 && !!"";
+
+// Practice with OR
+
+// 0 || false;
+
+// true || false;
+
+// true || 1;
+
+// !true || !false
+
+// !1 || !0
+```
 
 Before we get to that, however...
 
@@ -214,12 +239,13 @@ forget to re-comment out line 1 before you move on.
 
 ### Instructions
 
-Okay, let's get some practice with logical operators. Take a look at line 4 in
-the REPL (the only un-commented out line). What do you think the expression will
-return? Think it through and come up with an answer, then click Run to check
-whether you're right. When you're done with the first expression, work your way
-down, un-commenting out each expression in turn. Be sure you think each example
-through and figure out your answer before clicking Run.
+Okay, let's get some practice with logical operators. Take a look at the 4th
+line in the code above (the only un-commented out line). What do you think the
+expression will return? Think it through and come up with an answer, then copy &
+paste it into your console and hit enter to check whether you're right. When
+you're done with the first expression, work your way down, un-commenting out
+each expression in turn. Be sure you think each example through and figure out
+your answer before clicking Run.
 
 If you're having difficulty with the examples, try following this procedure:
 
