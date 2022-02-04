@@ -36,9 +36,10 @@ const falseyValue = 0;
 
 <iframe height="400px" width="100%" src="https://replit.com/@lizbur10/Sandbox?lite=1&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
-If you click the Run button you'll see the bang operator in action, returning
-the reverse of `truthyValue`'s truthiness. Then modify the code on the last line
-to verify that it works for `falseyValue` as well.
+Verify the above code works by running it in the REPL console (remember to hit
+`enter`!) Play around with it and you'll see the bang operator in action,
+returning the reverse of `truthyValue`'s truthiness. Then modify the code on the
+last line to verify that it works for `falseyValue` as well.
 
 ## Describe How to Convert an Expression to a Boolean Using `!!`
 
@@ -49,7 +50,7 @@ in some input, _constructs_ a new Boolean from that input, and outputs the newly
 constructed Boolean.
 
 As a shorter way to convert any value into a Boolean, we can use two NOT
-operators. Let's change the code on the last line to `!!truthyValue`.
+operators. Let's try running `!!truthyValue` in our console to see the difference.
 
 The JavaScript engine reads from left to right: it sees the first `!` and looks
 to the right to check what we're asking it to invert (`!truthyValue`). It then
@@ -194,48 +195,42 @@ we've learned about in this lesson:
 // Practice with AND
 0 && false;
 
-// 0 && true;
+0 && true;
 
-// true && NaN;
+true && NaN;
 
-// true && !1;
+true && !1;
 
-// !0 && "This is a string";
+!0 && "This is a string";
 
-// !0 && "";
+!0 && "";
 
-// !0 && !!"";
+!0 && !!"";
 
 // Practice with OR
+0 || false;
 
-// 0 || false;
+true || false;
 
-// true || false;
+true || 1;
 
-// true || 1;
+!true || !false
 
-// !true || !false
-
-// !1 || !0
+!1 || !0
 ```
 
 Before we get to that, however...
 
 ### A Note About Comments in Code
 
-Note that most of the lines in the REPL currently have the characters `//` at
-the front. The `//` is used in JavaScript to 'comment out' lines of code. Any
+Note that some of the lines in the code above currently have the characters `//`
+at the front. The `//` is used in JavaScript to 'comment out' lines of code. Any
 line in your code that has `//` at the front will _not be interpreted_ by the
 JavaScript engine. This enables us to do two things: 1) include text (i.e.,
-messages meant for humans) in our code files without JavaScript throwing an
-error, and 2) _temporarily_ keep lines of code from being interpreted; this
-second use can be especially handy when debugging code.
-
-Try removing the `//` at the beginning of line 1 and clicking the Run button.
-Not surprisingly, JavaScript doesn't know what to do with that line of 'code'.
-The `//` enables programmers to include messages to other programmers — or to
-their own future selves — for documentation or clarification purposes. Don't
-forget to re-comment out line 1 before you move on.
+messages meant for humans like we have above) in our code files without
+JavaScript throwing an error, and 2) _temporarily_ keep lines of code from being
+interpreted; this second use can be especially handy when debugging code. You'll
+learn more about this later.
 
 ### Instructions
 
