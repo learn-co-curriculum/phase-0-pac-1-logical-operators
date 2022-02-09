@@ -246,7 +246,7 @@ expression will return? Think it through and come up with an answer, then copy &
 paste it into your console and hit enter to check whether you're right. When
 you're done with the first expression, work your way down through the remaining 
 expression in turn. Be sure you think each example through and figure out
-your answer before clicking Run.
+your answer before running your code.
 
 If you're having difficulty with the examples, try following this procedure:
 
