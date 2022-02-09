@@ -39,7 +39,9 @@ const falseyValue = 0;
 Verify the above code works by running it in the REPL console (remember to hit
 `enter`!) Play around with it and you'll see the bang operator in action,
 returning the reverse of `truthyValue`'s truthiness. Then modify the code on the
-last line to verify that it works for `falseyValue` as well.
+Verify the above code works by running it in the REPL console (remember to hit
+`enter`!) Play around with it and you'll see the bang operator in action,
+returning the reverse of `truthyValue`'s truthiness. Be sure to verify that it works for `falseyValue` as well.
 
 ## Describe How to Convert an Expression to a Boolean Using `!!`
 
