@@ -38,10 +38,8 @@ const falseyValue = 0;
 
 Verify the above code works by running it in the REPL console (remember to hit
 `enter`!) Play around with it and you'll see the bang operator in action,
-returning the reverse of `truthyValue`'s truthiness. Then modify the code on the
-Verify the above code works by running it in the REPL console (remember to hit
-`enter`!) Play around with it and you'll see the bang operator in action,
-returning the reverse of `truthyValue`'s truthiness. Be sure to verify that it works for `falseyValue` as well.
+returning the reverse of `truthyValue`'s truthiness. Be sure to verify that it
+works for `falseyValue` as well.
 
 ## Describe How to Convert an Expression to a Boolean Using `!!`
 
@@ -240,10 +238,7 @@ Okay, let's get some practice with logical operators. Take a look at the first
 un-commented out line in the snippet above. What do you think the
 expression will return? Think it through and come up with an answer, then copy &
 paste it into your console and hit enter to check whether you're right. When
-you're done with the first expression, work your way down, un-commenting out
-expression will return? Think it through and come up with an answer, then copy &
-paste it into your console and hit enter to check whether you're right. When
-you're done with the first expression, work your way down through the remaining 
+you're done with the first expressions, work your way down through the remaining 
 expression in turn. Be sure you think each example through and figure out
 your answer before running your code.
 
