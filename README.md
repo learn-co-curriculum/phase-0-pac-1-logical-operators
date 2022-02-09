@@ -236,9 +236,8 @@ learn more about this later.
 
 ### Instructions
 
-Okay, let's get some practice with logical operators. Take a look at the 4th
-Okay, let's get some practice with logical operators. Take a look at the first un-commented out line
-line in the snippet above. What do you think the
+Okay, let's get some practice with logical operators. Take a look at the first
+un-commented out line in the snippet above. What do you think the
 expression will return? Think it through and come up with an answer, then copy &
 paste it into your console and hit enter to check whether you're right. When
 you're done with the first expression, work your way down, un-commenting out
