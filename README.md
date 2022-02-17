@@ -36,10 +36,11 @@ const falseyValue = 0;
 
 <iframe height="400px" width="100%" src="https://replit.com/@lizbur10/Sandbox?lite=1&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
-Verify the above code works by running it in the REPL console (remember to hit
-`enter`!) Play around with it and you'll see the bang operator in action,
-returning the reverse of `truthyValue`'s truthiness. Be sure to verify that it
-works for `falseyValue` as well.
+Verify the above code works by running it in the REPL console. You should see
+the bang operator in action, returning the reverse of `truthyValue`'s
+truthiness. Be sure to verify that it works for `falseyValue` as well. Remember
+to click the "play" button to reset the console if you get an error or want to
+clear out the code.
 
 ## Describe How to Convert an Expression to a Boolean Using `!!`
 
@@ -186,11 +187,28 @@ otherwise.
 
 ## Practicing What We've Learned
 
-The code below contains a number of expressions that use the logical operators
-we've learned about in this lesson:
+Okay, let's get some practice with logical operators. Take a look at the first
+un-commented out line in the snippet below: `0 && false;`. What do you think the
+expression will return? Think it through and come up with an answer, then copy &
+paste it into the REPL console and hit enter to check whether you're right. When
+you're done with the first expression, work your way down through the remaining
+expressions in turn. Be sure you think each example through and figure out your
+answer before running the code.
+
+If you're having difficulty with the examples, try following this procedure:
+
+1. Evaluate each side of the operator individually: what is the _return value_
+   of each individual expression, and what is the _truthiness_ of each of those
+   values?
+2. Find the corresponding row in the appropriate table above and refer to the
+   'Return value' column to determine the return value of the full expression.
+
+Finally, once you're done with the provided expressions, experiment with some
+examples of your own to cement your understanding.
 
 ```js
-//What should each of the following expressions return? Once you have an answer, copy the expression in question into the console and hit enter to see if you're right!
+//What should each of the following expressions return? 
+//Once you have an answer, copy the expression in question into the console and hit enter to see if you're right!
 
 // Practice with AND
 0 && false;
@@ -219,39 +237,7 @@ true || 1;
 !1 || !0
 ```
 
-Before we get to that, however...
-
-### A Note About Comments in Code
-
-Note that some of the lines in the code above currently have the characters `//`
-at the front. The `//` is used in JavaScript to 'comment out' lines of code. Any
-line in your code that has `//` at the front will _not be interpreted_ by the
-JavaScript engine. This enables us to do two things: 1) include text (i.e.,
-messages meant for humans like we have above) in our code files without
-JavaScript throwing an error, and 2) _temporarily_ keep lines of code from being
-interpreted; this second use can be especially handy when debugging code. You'll
-learn more about this later.
-
-### Instructions
-
-Okay, let's get some practice with logical operators. Take a look at the first
-un-commented out line in the snippet above. What do you think the
-expression will return? Think it through and come up with an answer, then copy &
-paste it into your console and hit enter to check whether you're right. When
-you're done with the first expression, work your way down through the remaining 
-expressions in turn. Be sure you think each example through and figure out
-your answer before running your code.
-
-If you're having difficulty with the examples, try following this procedure:
-
-1. Evaluate each side of the operator individually: what is the _return value_
-   of each individual expression, and what is the _truthiness_ of each of those
-   values?
-2. Find the corresponding row in the appropriate table above and refer to the
-   'Return value' column to determine the return value of the full expression.
-
-Finally, once you're done with the provided expressions, experiment with some
-examples of your own to cement your understanding.
+<iframe height="400px" width="100%" src="https://replit.com/@lizbur10/Sandbox?lite=1&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 ## Conclusion
 
