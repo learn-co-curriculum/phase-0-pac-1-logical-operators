@@ -36,11 +36,10 @@ const falseyValue = 0;
 
 <iframe height="400px" width="100%" src="https://replit.com/@lizbur10/Sandbox?lite=1&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
-Verify the above code works by running it in the REPL console. You should see
-the bang operator in action, returning the reverse of `truthyValue`'s
-truthiness. Be sure to verify that it works for `falseyValue` as well. Remember
-to click the "play" button to reset the console if you get an error or want to
-clear out the code.
+Verify the above code works in the REPL console. You will see the bang operator
+in action, returning the reverse of `truthyValue`'s truthiness. Be sure to
+verify that it works for `falseyValue` as well. Remember to click the run
+button to reset the console if you get an error or want to clear out the code.
 
 ## Describe How to Convert an Expression to a Boolean Using `!!`
 
