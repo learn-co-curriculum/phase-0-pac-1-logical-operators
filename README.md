@@ -34,7 +34,7 @@ const falseyValue = 0;
 !truthyValue;
 ```
 
-<iframe height="400px" width="100%" src="https://replit.com/@lizbur10/Sandbox?lite=1&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+<iframe height="400px" width="100%" src="https://replit.com/@lizbur10/Sandbox?embed=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 Verify the above code works in the REPL console. You will see the bang operator
 in action, returning the reverse of `truthyValue`'s truthiness. Be sure to
@@ -236,7 +236,7 @@ true || 1;
 !1 || !0
 ```
 
-<iframe height="400px" width="100%" src="https://replit.com/@lizbur10/Sandbox?lite=1&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+<iframe height="400px" width="100%" src="https://replit.com/@lizbur10/Sandbox?embed=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 ## Conclusion
 
