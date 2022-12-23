@@ -1,10 +1,10 @@
 ---
 :lessons:
-- :id: 233793
-  :course_id: 6602
-  :canvas_url: https://learning.flatironschool.com/courses/6602/pages/logical-operators
-  :type: page
 - :id: 239944
   :course_id: 6638
   :canvas_url: https://learning.flatironschool.com/courses/6638/pages/logical-operators
+  :type: page
+- :id: 240925
+  :course_id: 6602
+  :canvas_url: https://learning.flatironschool.com/courses/6602/pages/logical-operators
   :type: page
